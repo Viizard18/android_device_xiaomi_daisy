@@ -71,6 +71,9 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
 # API Override
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/bin/mm-qcamera-daemon=27 \
