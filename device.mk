@@ -608,3 +608,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libnl \
     libnl.vendor
+
+# Iorap
+PRODUCT_PACKAGES += \
+    iorap-app-startup-runner
+
