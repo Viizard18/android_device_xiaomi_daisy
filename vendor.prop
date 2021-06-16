@@ -346,6 +346,12 @@ ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
 
+# Battery
+pm.sleep_mode=2
+ro.config.hw_power_saving=1
+wifi.supplicant_scan_interval = 180
+ro.ril.disable.power.collapse=0
+
 # Unsorted properties
 keyguard.no_require_sim=true
 persist.backup.ntpServer=0.pool.ntp.org
