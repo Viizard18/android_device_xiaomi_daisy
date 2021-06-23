@@ -56,4 +56,4 @@ WITH_MIUICAM := true
 # Nusantara Stuff's
 TARGET_USES_BLUR := true
 USE_PIXEL_CHARGING := true
-
+TARGET_BOOT_ANIMATION_RES := 1080
