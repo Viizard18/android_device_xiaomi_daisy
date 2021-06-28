@@ -59,10 +59,10 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
 #TARGET_COMPILE_WITH_MSM_KERNEL := true
 
-# Clang Version
-#TARGET_KERNEL_CLANG_VERSION := proton
-#TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
-#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+# Use SDClang LLVM
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := sdllvm
+TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
