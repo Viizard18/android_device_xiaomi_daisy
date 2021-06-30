@@ -252,6 +252,7 @@ vendor.iop.enable_prefetch_ofr=1
 vendor.perf.iop_v3.enable=1
 ro.vendor.gt_library=libqti-gt.so
 ro.vendor.at_library=libqti-at.so
+vendor.debug.enable.gamed=0
 persist.vendor.qti.games.gt.prof=1
 ro.vendor.qti.am.reschedule_service=true
 ro.vendor.qti.sys.fw.bservice_age=5000

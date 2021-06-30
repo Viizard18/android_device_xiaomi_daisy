@@ -568,3 +568,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
+
+on property:sys.boot_completed=1
+    setprop vendor.post_boot.parsed 1

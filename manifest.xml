@@ -496,6 +496,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IPerf</name>
             <instance>default</instance>
         </interface>
+	<fqname>@2.2::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qdutils_disp</name>
