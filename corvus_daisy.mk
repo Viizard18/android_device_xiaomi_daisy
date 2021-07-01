@@ -21,21 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Nusantara-Project stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common CorvusOS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Inherit some prebuilts
-$(call inherit-product, vendor/custom/prebuilts/config.mk) 
+$(call inherit-product, vendor/custom/prebuilts/config.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := nad_daisy
+PRODUCT_NAME := corvus_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
-	
+
 TARGET_VENDOR_PRODUCT_NAME := daisy
 TARGET_VENDOR_DEVICE_NAME := daisy
 
@@ -53,7 +53,7 @@ BUILD_FINGERPRINT := "google/coral/coral:11/RQ3A.210605.005/7349499:user/release
 # Use MiuiCamera
 WITH_MIUICAM := true
 
-# Nusantara Stuff's
+# Some Stuff's
 TARGET_USES_BLUR := true
 USE_PIXEL_CHARGING := true
 TARGET_BOOT_ANIMATION_RES := 1080
